@@ -185,18 +185,15 @@ path {
 </g>
 <g transform="translate(639, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">,</text>
-<text x="0" y="-24" class="key shifted">;</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;comma_semi</tspan></text>
 </g>
 <g transform="translate(698, 160)" class="key keypos-28">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">.</text>
-<text x="0" y="-24" class="key shifted">:</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;dot_colon</tspan></text>
 </g>
 <g transform="translate(758, 199)" class="key keypos-29">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">?</text>
-<text x="0" y="-24" class="key shifted">!</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;qmrk_excl</tspan></text>
 </g>
 <g transform="translate(188, 228)" class="key keypos-30">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -209,9 +206,7 @@ path {
 </g>
 <g transform="translate(321, 246) rotate(30.0)" class="key keypos-32">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
-<text x="0" y="0" class="key tap">⇧</text>
-<text x="0" y="40" class="key hold">sticky</text>
-<text x="0" y="-40" class="key shifted">⇪</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;smart_shft</tspan></text>
 </g>
 <g transform="translate(463, 246) rotate(-30.0)" class="key keypos-33">
 <rect rx="6" ry="6" x="-26" y="-42" width="52" height="85" class="key"/>
@@ -226,6 +221,12 @@ path {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌫</text>
 <text x="0" y="-24" class="key shifted">⌦</text>
+</g>
+<g class="combo combopos-0">
+<path d="M476,198 l203,-35" class="combo"/>
+<path d="M476,198 l-203,35" class="combo"/>
+<rect rx="6" ry="6" x="462" y="185" width="28" height="26" class="combo"/>
+<text x="476" y="198" class="combo tap"><tspan style="font-size: 88%">CAPSLOCK</tspan></text>
 </g>
 </g>
 </g>
@@ -316,8 +317,7 @@ path {
 </g>
 <g transform="translate(30, 199)" class="key keypos-20">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">/</text>
-<text x="0" y="-24" class="key shifted">\</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;slh_morph</tspan></text>
 </g>
 <g transform="translate(89, 160)" class="key keypos-21">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
@@ -339,8 +339,7 @@ path {
 </g>
 <g transform="translate(520, 170)" class="key keypos-25">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
-<text x="0" y="0" class="key tap">&amp;</text>
-<text x="0" y="-24" class="key shifted">|</text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;amps_morph</tspan></text>
 </g>
 <g transform="translate(580, 162)" class="key keypos-26">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key"/>
