@@ -93,6 +93,7 @@
             bindings = <&kp CAPSLOCK>;
             key-positions = <13 16>;
             timeout-ms = <100>;
+            layers = <0>;
         };
     };
 
