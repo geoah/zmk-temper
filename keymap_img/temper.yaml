@@ -46,7 +46,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - LEFT ARROW
-    - UP
+    - DOWN
     - RIGHT
     - ESC
   - - {t: ▽, type: trans}
