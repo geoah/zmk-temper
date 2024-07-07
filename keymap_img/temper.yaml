@@ -27,7 +27,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - fun
   nav:
   - - TAB
     - MUTE
@@ -64,7 +64,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {type: held}
-    - {t: ▽, type: trans}
+    - fun
   fun:
   - - {t: default, h: toggle}
     - {t: ▽, type: trans}
