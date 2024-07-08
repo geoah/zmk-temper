@@ -66,12 +66,12 @@ layers:
     - {type: held}
     - fun
   fun:
-  - - {t: default, h: toggle}
+  - - '&bootloader'
     - {t: ▽, type: trans}
     - PRINTSCREEN
     - '&win_sleep'
     - OUT TOG
-    - {t: ▽, type: trans}
+    - '&bootloader'
     - F7
     - F8
     - F9
