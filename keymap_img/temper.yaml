@@ -29,7 +29,7 @@ layers:
     - {t: ▽, type: trans}
     - '0'
   nav:
-  - - TAB
+  - - ESCAPE
     - MUTE
     - VOL DN
     - VOL UP
@@ -39,16 +39,16 @@ layers:
     - UP ARROW
     - PAGE UP
     - {t: ▽, type: trans}
-  - - {t: LSHFT, h: sticky}
+  - - {t: LEFT GUI, h: sticky}
     - {t: LCTRL, h: sticky}
     - {t: RIGHT ALT, h: sticky}
-    - {t: LGUI, h: sticky}
+    - {t: LEFT SHIFT, h: sticky}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - LEFT ARROW
     - DOWN
     - RIGHT
-    - ESC
+    - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
     - PREV
     - PP
