@@ -13,10 +13,10 @@ layers:
     - ;
   - [Z, X, C, V, B, N, M, ',', ., /]
   - - TAB
-    - {t: DELETE, h: num}
+    - {t: DELETE, h: num, s: DELETE}
     - SPACE
     - ENTER
-    - {t: BACKSPACE, h: nav}
+    - {t: BACKSPACE, h: nav, s: BACKSPACE}
     - fun
   num:
   - ['`', '@', '{', '}', '%', '*', '7', '8', '9', '-']
