@@ -6,6 +6,10 @@
 
 #include "temper.dtsi"
 
+nice_view_spi: &spi0 {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
+
 &kscan0 {
     col-gpiosl
         = <&pro_micro 15 GPIO_ACTIVE_HIGH>
@@ -16,8 +20,6 @@
         ;    
 };
 
-nice_view_spi: &spi0 {
-    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
-};
+
 
 
