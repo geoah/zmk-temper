@@ -26,22 +26,22 @@
         media
         {
             compatible = "zmk,behavior-tap-dance";
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             bindings = <&kp C_PLAY_PAUSE>, <&kp C_NEXT>, <&kp C_PREVIOUS>;
 
-            tapping - term - ms = <400>;
+            tapping-term-ms = <400>;
         };
 
     hm:
-        homerow - mods
+        homerow-mods
         {
             compatible = "zmk,behavior-hold-tap";
             label = "homehow-mods";
-#binding - cells = < 2>;
-            tapping - term - ms = <175>;
+#binding-cells = < 2>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
-            quick - tap - ms = <125>;
-            global - quick - tap;
+            quick-tap-ms = <125>;
+            global-quick-tap;
             bindings = <&kp>, <&kp>;
         };
 
@@ -50,11 +50,11 @@
         {
             compatible = "zmk,behavior-hold-tap";
             label = "Thumb_mods";
-#binding - cells = < 2>;
-            tapping - term - ms = <175>;
+#binding-cells = < 2>;
+            tapping-term-ms = <175>;
             flavor = "tap-preferred";
-            quick - tap - ms = <125>;
-            global - quick - tap;
+            quick-tap-ms = <125>;
+            global-quick-tap;
             bindings = <&mo>, <&kp>;
         };
 
@@ -65,11 +65,11 @@
             label = "WEAK";
             bindings = <&kp>, <&kp>;
 
-#binding - cells = < 2>;
-            tapping - term - ms = <230>;
+#binding-cells = < 2>;
+            tapping-term-ms = <230>;
             flavor = "tap-preferred";
-            require - prior - idle - ms = <125>;
-            quick - tap - ms = <230>;
+            require-prior-idle-ms = <125>;
+            quick-tap-ms = <230>;
         };
 
     tmb_lyr1:
@@ -79,7 +79,7 @@
             label = "TMB_LYR1";
             bindings = <&mo 1>, <&kp DELETE>;
 
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -90,7 +90,7 @@
             label = "TMB_LYR2";
             bindings = <&mo 2>, <&kp BACKSPACE>;
 
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -101,7 +101,7 @@
             label = "BARRA";
             bindings = <&kp SLASH>, <&kp NON_US_BSLH>;
 
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -112,7 +112,7 @@
             label = "BORRAR";
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
 
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -123,7 +123,7 @@
             label = "DEL";
             bindings = <&lt 1 DELETE>, <&kp DELETE>;
 
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };
@@ -135,8 +135,8 @@
         caps_combo
         {
             bindings = <&kp CAPSLOCK>;
-            key - positions = <13 16>;
-            timeout - ms = <100>;
+            key-positions = <13 16>;
+            timeout-ms = <100>;
             layers = <0>;
         };
     };
@@ -148,11 +148,11 @@
     win_sleep:
         win_sleep
         {
-            wait - ms = <50>;
-            tap - ms = <5>;
+            wait-ms = <50>;
+            tap-ms = <5>;
             compatible = "zmk,behavior-macro";
             label = "WIN_SLEEP_KEY";
-#binding - cells = < 0>;
+#binding-cells = < 0>;
             bindings = <&kp LG(X) & kp U & kp S>;
         };
     };
