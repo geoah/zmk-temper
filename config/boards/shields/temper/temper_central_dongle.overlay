@@ -5,10 +5,13 @@
  */
 
 #include "temper.dtsi"
-#include "nice_bodge.dtsi"
+
+nice_view_spi: &spi0 {
+    cs-gpios = <&pro_micro 0 GPIO_ACTIVE_HIGH>;
+};
 
 &kscan0 {
-    col-gpiosl
+    col-gpios
         = <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>
         , <&pro_micro 19 GPIO_ACTIVE_HIGH>
