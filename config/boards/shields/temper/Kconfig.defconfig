@@ -3,7 +3,7 @@
 
 if SHIELD_TEMPER_DONGLE
 
-config ZMK_KEYBOARD_NAMEa
+config ZMK_KEYBOARD_NAME
 	default "Temper Dongle"
 	
 config ZMK_SPLIT_BLE_ROLE_CENTRAL
