@@ -1,16 +1,25 @@
-if SHIELD_TEMPER_LEFT
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
 
-config ZMK_KEYBOARD_NAME
-    default "Temper"
+if SHIELD_TEMPER_DONGLE
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
+config ZMK_KEYBOARD_NAMEa
+	default "Temper Dongle"
+	
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+	
+config ZMK_USB
+	default y
 
 endif
 
-if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT
+if SHIELD_TEMPER_LEFT || SHIELD_TEMPER_RIGHT || SHIELD_TEMPER_DONGLE 
 
 config ZMK_SPLIT
-    default y
+	default y
 
+config ZMK_BLE
+	default y
+	
 endif
