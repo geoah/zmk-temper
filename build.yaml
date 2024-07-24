@@ -13,7 +13,10 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_ble
+  - board: seeeduino_xiao_ble 
+    shield: temper_central_dongle nice_bodge_adapter nice_view
+    artifact-name: temper_central_dongle_nice_view
+  - board: seeeduino_xiao_ble 
     shield: temper_central_dongle 
     artifact-name: temper_central_dongle
   - board: nice_nano_v2
