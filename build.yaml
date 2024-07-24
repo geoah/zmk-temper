@@ -13,7 +13,7 @@
 #
 ---
 include:
-  - board: seeeduino_xiao_rp2040
+  - board: seeeduino_xiao_ble
     shield: temper_central_dongle 
     artifact-name: temper_central_dongle
   - board: nice_nano_v2
