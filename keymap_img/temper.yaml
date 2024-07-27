@@ -97,3 +97,5 @@ combos:
 - p: [22, 23]
   k: Ctl+ V
   l: [default]
+- p: [14, 15]
+  k: '&key_repeat'
