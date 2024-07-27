@@ -93,7 +93,7 @@
             bindings = <&lt 2 BACKSPACE>, <&kp BACKSPACE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RALT|MOD_LALT)>;
         };
 
         del: del {
@@ -102,7 +102,7 @@
             bindings = <&lt 1 DELETE>, <&kp DELETE>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
+            mods = <(MOD_RALT|MOD_LALT)>;
         };
 
         exclbarra: exclbarra {
