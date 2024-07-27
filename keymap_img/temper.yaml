@@ -50,7 +50,7 @@ layers:
   - [ESCAPE, MUTE, VOL DN, VOL UP, '', '', HOME, UP ARROW, PAGE UP, '']
   - - {t: LEFT GUI, h: sticky}
     - {t: LCTRL, h: sticky}
-    - {t: RIGHT ALT, h: sticky}
+    - {t: LEFT ALT, h: sticky}
     - {t: LEFT SHIFT, h: sticky}
     - ''
     - ''
