@@ -88,3 +88,12 @@ combos:
 - p: [13, 16]
   k: CAPSLOCK
   l: [default]
+- p: [20, 21]
+  k: Ctl+ X
+  l: [default]
+- p: [21, 22]
+  k: Ctl+ C
+  l: [default]
+- p: [22, 23]
+  k: Ctl+ V
+  l: [default]
