@@ -30,8 +30,17 @@ layers:
     - '5'
     - '6'
     - +
-  - ['''', '&', '[', ']', '!', '0', '1', '2', '3', '=']
-  - - ''
+  - - ''''
+    - '&'
+    - '['
+    - ']'
+    - {t: '!', s: '|'}
+    - '0'
+    - '1'
+    - '2'
+    - '3'
+    - '='
+  - - {t: ▽, type: trans}
     - {type: held}
     - ''
     - ''
@@ -41,7 +50,7 @@ layers:
   - [ESCAPE, MUTE, VOL DN, VOL UP, '', '', HOME, UP ARROW, PAGE UP, '']
   - - {t: LEFT GUI, h: sticky}
     - {t: LCTRL, h: sticky}
-    - {t: RIGHT ALT, h: sticky}
+    - {t: LEFT ALT, h: sticky}
     - {t: LEFT SHIFT, h: sticky}
     - ''
     - ''
@@ -50,12 +59,12 @@ layers:
     - RIGHT
     - ''
   - ['', PREV, PP, NEXT, '', '', END, '', PAGE DOWN, '']
-  - - ''
+  - - {t: ▽, type: trans}
     - ''
     - ''
     - ''
     - {type: held}
-    - fun
+    - ''
   fun:
   - ['&bootloader', '', PRINTSCREEN, '&win_sleep', OUT TOG, '&bootloader', F7, F8, F9, F12]
   - - {t: BT, h: '0'}
@@ -79,3 +88,14 @@ combos:
 - p: [13, 16]
   k: CAPSLOCK
   l: [default]
+- p: [20, 21]
+  k: Ctl+ X
+  l: [default]
+- p: [21, 22]
+  k: Ctl+ C
+  l: [default]
+- p: [22, 23]
+  k: Ctl+ V
+  l: [default]
+- p: [14, 15]
+  k: '&key_repeat'
