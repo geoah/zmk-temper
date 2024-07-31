@@ -10,7 +10,7 @@
 // #include "widgets/bongo_cat.h"
 #include "widgets/layer_status.h"
 #include "widgets/output_status.h"
-#include "widgets/hid_indicators.h"
+// #include "widgets/hid_indicators.h"
 
 #include <zephyr/logging/log.h>
 LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
@@ -21,9 +21,9 @@ static struct zmk_widget_dongle_battery_status dongle_battery_status_widget;
 static struct zmk_widget_modifiers modifiers_widget;
 // static struct zmk_widget_bongo_cat bongo_cat_widget;
 
-#if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
-static struct zmk_widget_hid_indicators hid_indicators_widget;
-#endif
+// #if IS_ENABLED(CONFIG_ZMK_HID_INDICATORS)
+// static struct zmk_widget_hid_indicators hid_indicators_widget;
+// #endif
 
 lv_style_t global_style;
 
@@ -58,7 +58,7 @@ lv_obj_t *zmk_display_status_screen()
     // lv_obj_align_to(zmk_widget_layer_status_obj(&layer_status_widget), zmk_widget_bongo_cat_obj(&bongo_cat_widget), LV_ALIGN_BOTTOM_LEFT, 0, 5);
 
     zmk_widget_dongle_battery_status_init(&dongle_battery_status_widget, screen);
-    lv_obj_align(zmk_widget_dongle_battery_status_obj(&dongle_battery_status_widget), LV_ALIGN_TOP_RIGHT, -1, 0);
+    lv_obj_align(zmk_widget_dongle_battery_status_obj(&dongle_battery_status_widget), LV_ALIGN_TOP_RIGHT, -2, 0);
 
     return screen;
 }
