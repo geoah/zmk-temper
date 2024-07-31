@@ -40,7 +40,7 @@ layers:
     - '2'
     - '3'
     - '='
-  - - ''
+  - - {t: ▽, type: trans}
     - {type: held}
     - ''
     - ''
@@ -59,12 +59,12 @@ layers:
     - RIGHT
     - ''
   - ['', PREV, PP, NEXT, '', '', END, '', PAGE DOWN, '']
-  - - ''
+  - - {t: ▽, type: trans}
     - ''
     - ''
     - ''
     - {type: held}
-    - fun
+    - ''
   fun:
   - ['&bootloader', '', PRINTSCREEN, '&win_sleep', OUT TOG, '&bootloader', F7, F8, F9, F12]
   - - {t: BT, h: '0'}
