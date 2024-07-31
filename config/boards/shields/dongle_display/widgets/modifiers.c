@@ -18,15 +18,17 @@ LOG_MODULE_DECLARE(zmk, CONFIG_ZMK_LOG_LEVEL);
 
 #include "modifiers.h"
 
-struct modifiers_state {    
+struct modifiers_state
+{
     uint8_t modifiers;
 };
 
-struct modifier_symbol {    
+struct modifier_symbol
+{
     uint8_t modifier;
     const lv_img_dsc_t *symbol_dsc;
     lv_obj_t *symbol;
-    lv_obj_t *selection_line; 
+    lv_obj_t *selection_line;
     bool is_active;
 };
 
@@ -60,8 +62,7 @@ struct modifier_symbol *modifier_symbols[] = {
     &ms_control,
     &ms_opt,
     &ms_cmd,
-    &ms_shift
-};
+    &ms_shift};
 #else
 LV_IMG_DECLARE(alt_icon);
 struct modifier_symbol ms_alt = {
@@ -78,21 +79,22 @@ struct modifier_symbol ms_win = {
 struct modifier_symbol *modifier_symbols[] = {
     // this order determines the order of the symbols
     &ms_win,
-    &ms_alt,
     &ms_control,
-    &ms_shift
-};
+    &ms_alt,
+    &ms_shift};
 #endif
 
 #define NUM_SYMBOLS (sizeof(modifier_symbols) / sizeof(struct modifier_symbol *))
 
 static sys_slist_t widgets = SYS_SLIST_STATIC_INIT(&widgets);
 
-static void anim_y_cb(void *var, int32_t v) {
+static void anim_y_cb(void *var, int32_t v)
+{
     lv_obj_set_y(var, v);
 }
 
-static void move_object_y(void *obj, int32_t from, int32_t to) {
+static void move_object_y(void *obj, int32_t from, int32_t to)
+{
     lv_anim_t a;
     lv_anim_init(&a);
     lv_anim_set_var(&a, obj);
@@ -103,15 +105,20 @@ static void move_object_y(void *obj, int32_t from, int32_t to) {
     lv_anim_start(&a);
 }
 
-static void set_modifiers(lv_obj_t *widget, struct modifiers_state state) {
-    for (int i = 0; i < NUM_SYMBOLS; i++) {
+static void set_modifiers(lv_obj_t *widget, struct modifiers_state state)
+{
+    for (int i = 0; i < NUM_SYMBOLS; i++)
+    {
         bool mod_is_active = state.modifiers & modifier_symbols[i]->modifier;
 
-        if (mod_is_active && !modifier_symbols[i]->is_active) {
+        if (mod_is_active && !modifier_symbols[i]->is_active)
+        {
             move_object_y(modifier_symbols[i]->symbol, 1, 0);
             move_object_y(modifier_symbols[i]->selection_line, SIZE_SYMBOLS + 4, SIZE_SYMBOLS + 2);
             modifier_symbols[i]->is_active = true;
-        } else if (!mod_is_active && modifier_symbols[i]->is_active) {
+        }
+        else if (!mod_is_active && modifier_symbols[i]->is_active)
+        {
             move_object_y(modifier_symbols[i]->symbol, 0, 1);
             move_object_y(modifier_symbols[i]->selection_line, SIZE_SYMBOLS + 2, SIZE_SYMBOLS + 4);
             modifier_symbols[i]->is_active = false;
@@ -119,15 +126,16 @@ static void set_modifiers(lv_obj_t *widget, struct modifiers_state state) {
     }
 }
 
-void modifiers_update_cb(struct modifiers_state state) {
+void modifiers_update_cb(struct modifiers_state state)
+{
     struct zmk_widget_modifiers *widget;
     SYS_SLIST_FOR_EACH_CONTAINER(&widgets, widget, node) { set_modifiers(widget->obj, state); }
 }
 
-static struct modifiers_state modifiers_get_state(const zmk_event_t *eh) {
-    return (struct modifiers_state) {
-        .modifiers = zmk_hid_get_explicit_mods()
-    };
+static struct modifiers_state modifiers_get_state(const zmk_event_t *eh)
+{
+    return (struct modifiers_state){
+        .modifiers = zmk_hid_get_explicit_mods()};
 }
 
 ZMK_DISPLAY_WIDGET_LISTENER(widget_modifiers, struct modifiers_state,
@@ -135,18 +143,20 @@ ZMK_DISPLAY_WIDGET_LISTENER(widget_modifiers, struct modifiers_state,
 
 ZMK_SUBSCRIPTION(widget_modifiers, zmk_keycode_state_changed);
 
-int zmk_widget_modifiers_init(struct zmk_widget_modifiers *widget, lv_obj_t *parent) {
+int zmk_widget_modifiers_init(struct zmk_widget_modifiers *widget, lv_obj_t *parent)
+{
     widget->obj = lv_obj_create(parent);
 
     lv_obj_set_size(widget->obj, NUM_SYMBOLS * (SIZE_SYMBOLS + 1) + 1, SIZE_SYMBOLS + 3);
-    
+
     static lv_style_t style_line;
     lv_style_init(&style_line);
     lv_style_set_line_width(&style_line, 2);
 
-    static const lv_point_t selection_line_points[] = { {0, 0}, {SIZE_SYMBOLS, 0} };
+    static const lv_point_t selection_line_points[] = {{0, 0}, {SIZE_SYMBOLS, 0}};
 
-    for (int i = 0; i < NUM_SYMBOLS; i++) {
+    for (int i = 0; i < NUM_SYMBOLS; i++)
+    {
         modifier_symbols[i]->symbol = lv_img_create(widget->obj);
         lv_obj_align(modifier_symbols[i]->symbol, LV_ALIGN_TOP_LEFT, 1 + (SIZE_SYMBOLS + 1) * i, 1);
         lv_img_set_src(modifier_symbols[i]->symbol, modifier_symbols[i]->symbol_dsc);
@@ -164,6 +174,7 @@ int zmk_widget_modifiers_init(struct zmk_widget_modifiers *widget, lv_obj_t *par
     return 0;
 }
 
-lv_obj_t *zmk_widget_modifiers_obj(struct zmk_widget_modifiers *widget) {
+lv_obj_t *zmk_widget_modifiers_obj(struct zmk_widget_modifiers *widget)
+{
     return widget->obj;
 }
