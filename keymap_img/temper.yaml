@@ -1,5 +1,5 @@
 layers:
-  default:
+  DEF:
   - [Q, W, E, R, T, Y, U, I, O, P]
   - - {t: A, h: LEFT GUI}
     - {t: S, h: LEFT CONTROL}
@@ -13,12 +13,12 @@ layers:
     - ;
   - [Z, X, C, V, B, N, M, ',', ., /]
   - - TAB
-    - {t: DELETE, h: num, s: DELETE}
+    - {t: DELETE, h: NUM, s: DELETE}
     - SPACE
     - ENTER
-    - {t: BACKSPACE, h: nav, s: BACKSPACE}
-    - fun
-  num:
+    - {t: BACKSPACE, h: NAV, s: BACKSPACE}
+    - FUN
+  NUM:
   - ['`', '@', '{', '}', '%', '*', '7', '8', '9', '-']
   - - ^
     - '#'
@@ -46,7 +46,7 @@ layers:
     - ''
     - ''
     - ''
-  nav:
+  NAV:
   - [ESCAPE, MUTE, VOL DN, VOL UP, '', '', HOME, UP ARROW, PAGE UP, '']
   - - {t: LEFT GUI, h: sticky}
     - {t: LCTRL, h: sticky}
@@ -65,7 +65,7 @@ layers:
     - ''
     - {type: held}
     - ''
-  fun:
+  FUN:
   - ['&bootloader', '', PRINTSCREEN, '&win_sleep', OUT TOG, '&bootloader', F7, F8, F9, F12]
   - - {t: BT, h: '0'}
     - {t: BT, h: '1'}
@@ -87,15 +87,15 @@ layers:
 combos:
 - p: [13, 16]
   k: CAPSLOCK
-  l: [default]
+  l: [DEF]
 - p: [20, 21]
   k: Ctl+ X
-  l: [default]
+  l: [DEF]
 - p: [21, 22]
   k: Ctl+ C
-  l: [default]
+  l: [DEF]
 - p: [22, 23]
   k: Ctl+ V
-  l: [default]
+  l: [DEF]
 - p: [14, 15]
   k: '&key_repeat'
