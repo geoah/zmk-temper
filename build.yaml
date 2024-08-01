@@ -1,21 +1,19 @@
 # This file generates the GitHub Actions matrix
-# For simple board + shield combinations, add them
-# to the top level board and shield arrays, for more
-# control, add individual board + shield combinations to
-# the `include` property, e.g:
-#
-# board: [ "nice_nano_v2" ]
-# shield: [ "corne_left", "corne_right" ]
-# include:
-#   - board: bdn9_rev2
-#   - board: nice_nano_v2
-#     shield: reviung41
-#
 ---
 include:
-  - board: nice_nano_v2
-    shield: temper_central_dongle nice_bodge_adapter nice_view
-    artifact-name: temper_central_dongle
+#Dongle
+  - board: seeeduino_xiao_ble  
+    shield: temper_central_dongle_128x32 dongle_display
+    artifact-name: temper_central_dongle_128x32
+  - board: seeeduino_xiao_ble  
+    shield: temper_central_dongle_128x64 dongle_display
+    artifact-name: temper_central_dongle_128x64
+  - board: seeeduino_xiao_ble  
+    shield: temper_central_dongle_128x64 
+    artifact-name: temper_central_dongle_no_display
+
+
+#Temper
   - board: nice_nano_v2
     shield: temper_central_left nice_view_adapter nice_view
     artifact-name: temper_central_left
@@ -25,5 +23,9 @@ include:
   - board: nice_nano_v2
     shield: temper_peripheral_right nice_view_adapter nice_view
     artifact-name: temper_peripheral_right
+  
+#Reset:
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
   - board: nice_nano_v2
     shield: settings_reset
