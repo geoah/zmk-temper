@@ -2,8 +2,11 @@
 # SPDX-License-Identifier: MIT
 
 
-config SHIELD_TEMPER_CENTRAL_DONGLE
-    def_bool $(shields_list_contains,temper_central_dongle) 
+config SHIELD_TEMPER_CENTRAL_DONGLE_128x64
+    def_bool $(shields_list_contains,temper_central_dongle_128x64) 
+
+config SHIELD_TEMPER_CENTRAL_DONGLE_128x32
+    def_bool $(shields_list_contains,temper_central_dongle_128x32) 
 
 config SHIELD_TEMPER_CENTRAL_LEFT
     def_bool $(shields_list_contains,temper_central_left)
