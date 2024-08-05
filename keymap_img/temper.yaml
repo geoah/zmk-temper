@@ -35,17 +35,17 @@ layers:
     - '['
     - ']'
     - {t: '!', s: '|'}
-    - '0'
+    - .
     - '1'
     - '2'
     - '3'
     - '='
   - - {t: ▽, type: trans}
     - {type: held}
-    - ''
-    - ''
-    - ''
-    - ''
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - '0'
   NAV:
   - [ESCAPE, MUTE, VOL DN, VOL UP, '', '', HOME, UP ARROW, PAGE UP, '']
   - - {t: LEFT GUI, h: sticky}
