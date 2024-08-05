@@ -99,3 +99,6 @@ combos:
   l: [DEF]
 - p: [14, 15]
   k: '&key_repeat'
+- p: [10, 11]
+  k: Ctl+ S
+  l: [DEF]
