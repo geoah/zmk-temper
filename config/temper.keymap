@@ -147,6 +147,12 @@
             bindings = <&key_repeat>;
             key-positions = <14 15>;
         };
+
+        save {
+            bindings = <&kp LC(S)>;
+            key-positions = <10 11>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -185,7 +191,7 @@
             >;
         };
 
-        nav_layer {            
+        nav_layer {
             display-name = "NAV";
             bindings = <
 &kp ESCAPE    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &none  &none  &kp HOME        &kp UP_ARROW  &kp PAGE_UP    &none
