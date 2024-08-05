@@ -102,3 +102,6 @@ combos:
 - p: [10, 11]
   k: Ctl+ S
   l: [DEF]
+- p: [0, 1]
+  k: ESCAPE
+  l: [DEF]

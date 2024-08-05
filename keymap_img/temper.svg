@@ -313,6 +313,10 @@ path.combo {
 <tspan x="59" dy="-0.6em">Ctl+</tspan><tspan x="59" dy="1.2em">S</tspan>
 </text>
 </g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="45" y="55" width="28" height="26" class="combo"/>
+<text x="59" y="68" class="combo tap">ESCAPE</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 354)" class="layer-NUM">
