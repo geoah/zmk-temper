@@ -5,8 +5,10 @@ on:
   push:               # automatically run on changes to following paths
     paths:
       - ".github/workflows/doc.yml"
-      - "keymap_img/keymap_drawer.config.yaml"
+      - "keymap_img/temper_keymap_config.yaml"
+      - "keymap_img/temper.yaml"
       - "config/*.keymap"
+      - "config/*.json"
 
 jobs:
   draw:
@@ -18,9 +20,8 @@ jobs:
       amend_commit: true
       fail_on_error: true
       install_branch: "main"
-      keymap_patterns: "config/*.keymap"
+      keymap_patterns: "config/temper.keymap"
       config_path: "keymap_img/temper_keymap_config.yaml"
-      json_path: "config/*.json"
+      json_path: "config/temper.json"
       output_folder: "keymap_img"                          # path to save produced SVG and keymap YAML files
-      # parse_args: "temper:'-c 10'"                         # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: "temper:' -s DEF NUM NAV FUN'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
