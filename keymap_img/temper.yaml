@@ -163,7 +163,7 @@ combos:
 - p: [14, 15]
   k: $$mdi:repeat$$
 - p: [10, 11]
-  k: Ctl+ S
+  k: $$mdi:content-save$$
   l: [DEF]
 - p: [0, 1]
   k: ESCAPE
