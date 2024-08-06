@@ -14,7 +14,8 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      commit_message: "doc: update keymap image"           # commit message for the changes
+      # commit_message: "doc: update keymap image"           # commit message for the changes
+      amend_commit: true
       keymap_patterns: "config/temper.keymap"                          # path to the keymaps to parse
       config_path: "keymap_img/keymap_drawer.config.yaml"  # config file, ignored if it does not exist
       output_folder: "keymap_img"                          # path to save produced SVG and keymap YAML files
