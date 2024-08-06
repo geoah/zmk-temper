@@ -121,7 +121,7 @@ parse_config:
 
     '&kp LC(F)': $$mdi:text-search$$
     '&kp LC(W)': $$mdi:close-box-outline$$
-    '&kp LA(F4)': $$mdi:gun$$
+    '&kp LA(F4)': $$mdi:close-box-outline$$
 
     '&kp LC(DE_PLUS)': $$mdi:magnify-plus-outline$$
     '&kp LC(DE_MINUS)': $$mdi:magnify-minus-outline$$
@@ -257,21 +257,13 @@ parse_config:
       type: text_with_symbol
     
   zmk_combos:
-    combo_bl:
-      align: top
-      offset: 2.4
-    combo_par:
+    combo_repeat:
       draw_separate: true
-    combo_bkt:
+    combo_kill:
       draw_separate: true
-    combo_int:
+    combo_caps:
       draw_separate: true
-    combo_cw:
-      draw_separate: true
-    combo_brc:
-      draw_separate: true
-    combo_tab:
-      draw_separate: true
+   
       
   zmk_keycode_map:
     LALT: ALT
