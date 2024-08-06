@@ -1,4 +1,4 @@
-layout: {zmk_keyboard: chocofi}
+layout: {qmk_keyboard: chocofi}
 layers:
   DEF:
   - [Q, W, E, R, T, Y, U, I, O, P]
