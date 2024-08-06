@@ -86,25 +86,25 @@ layers:
     - {type: held}
 combos:
 - p: [13, 16]
-  k: Caps
+  k: CAPSLOCK
   l: [DEF]
 - p: [20, 21]
-  k: Cut
+  k: Ctl+ X
   l: [DEF]
 - p: [21, 22]
-  k: Copy
+  k: Ctl+ C
   l: [DEF]
 - p: [22, 23]
-  k: Paste
+  k: Ctl+ V
   l: [DEF]
 - p: [14, 15]
   k: '&key_repeat'
 - p: [10, 11]
-  k: Save
+  k: Ctl+ S
   l: [DEF]
 - p: [0, 1]
-  k: Escape
+  k: ESCAPE
   l: [DEF]
 - p: [1, 2]
-  k: Close
+  k: Ctl+ W
   l: [DEF]
