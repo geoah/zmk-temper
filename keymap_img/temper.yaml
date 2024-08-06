@@ -1,97 +1,156 @@
-layout:
-  qmk_keyboard: corne_rotated
-  qmk_layout: LAYOUT_split_3x5_3
 layers:
   DEF:
-  - [Q, W, E, R, T, Y, U, I, O, P]
-  - - {t: A, h: LEFT GUI}
-    - {t: S, h: LEFT CONTROL}
-    - {t: D, h: RIGHT ALT}
-    - {t: F, h: LEFT SHIFT}
-    - G
-    - H
-    - {t: J, h: RIGHT SHIFT}
-    - {t: K, h: RIGHT ALT}
-    - {t: L, h: RIGHT CONTROL}
-    - ;
-  - [Z, X, C, V, B, N, M, ',', ., /]
-  - - TAB
-    - {t: DELETE, h: NUM, s: DELETE}
-    - SPACE
-    - ENTER
-    - {t: BACKSPACE, h: NAV, s: BACKSPACE}
-    - FUN
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LEFT GUI}
+  - {t: S, h: LEFT CONTROL}
+  - {t: D, h: RIGHT ALT}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: RIGHT ALT}
+  - {t: L, h: RIGHT CONTROL}
+  - ;
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - TAB
+  - {t: DELETE, h: NUM, s: DELETE}
+  - SPACE
+  - ENTER
+  - {t: BACKSPACE, h: NAV, s: BACKSPACE}
+  - FUN
   NUM:
-  - ['`', '@', '{', '}', '%', '*', '7', '8', '9', '-']
-  - - ^
-    - '#'
-    - (
-    - {t: ), h: LEFT SHIFT}
-    - $
-    - {t: /, s: '|'}
-    - {t: '4', h: RIGHT SHIFT}
-    - '5'
-    - '6'
-    - +
-  - - ''''
-    - '&'
-    - '['
-    - ']'
-    - {t: '!', s: '|'}
-    - .
-    - '1'
-    - '2'
-    - '3'
-    - '='
-  - - {t: ▽, type: trans}
-    - {type: held}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - '0'
+  - '`'
+  - '@'
+  - '{'
+  - '}'
+  - '%'
+  - '*'
+  - '7'
+  - '8'
+  - '9'
+  - '-'
+  - ^
+  - '#'
+  - (
+  - {t: ), h: LEFT SHIFT}
+  - $
+  - {t: /, s: '|'}
+  - {t: '4', h: RIGHT SHIFT}
+  - '5'
+  - '6'
+  - +
+  - ''''
+  - '&'
+  - '['
+  - ']'
+  - {t: '!', s: '|'}
+  - .
+  - '1'
+  - '2'
+  - '3'
+  - '='
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
   NAV:
-  - [ESCAPE, MUTE, VOL DN, VOL UP, '', '', HOME, UP ARROW, PAGE UP, '']
-  - - {t: LEFT GUI, h: sticky}
-    - {t: LCTRL, h: sticky}
-    - {t: LEFT ALT, h: sticky}
-    - {t: LEFT SHIFT, h: sticky}
-    - ''
-    - ''
-    - LEFT ARROW
-    - DOWN
-    - RIGHT
-    - ''
-  - ['', PREV, PP, NEXT, '', '', END, '', PAGE DOWN, '']
-  - - {t: ▽, type: trans}
-    - ''
-    - ''
-    - ''
-    - {type: held}
-    - ''
+  - ESCAPE
+  - MUTE
+  - VOL DN
+  - VOL UP
+  - ''
+  - ''
+  - HOME
+  - UP ARROW
+  - PAGE UP
+  - ''
+  - {t: LEFT GUI, h: sticky}
+  - {t: LCTRL, h: sticky}
+  - {t: LEFT ALT, h: sticky}
+  - {t: LEFT SHIFT, h: sticky}
+  - ''
+  - ''
+  - LEFT ARROW
+  - DOWN
+  - RIGHT
+  - ''
+  - ''
+  - PREV
+  - PP
+  - NEXT
+  - ''
+  - ''
+  - END
+  - ''
+  - PAGE DOWN
+  - ''
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
   FUN:
-  - ['&bootloader', '', PRINTSCREEN, '&win_sleep', OUT TOG, '&bootloader', F7, F8, F9, F12]
-  - - {t: BT, h: '0'}
-    - {t: BT, h: '1'}
-    - {t: BT, h: '2'}
-    - {t: BT, h: '3'}
-    - {t: BT, h: '4'}
-    - ''
-    - F4
-    - F5
-    - F6
-    - F11
-  - ['', '', BT CLR, '', '', '', F1, F2, F3, F10]
-  - - ''
-    - ''
-    - ''
-    - ''
-    - ''
-    - {type: held}
+  - '&bootloader'
+  - ''
+  - PRINTSCREEN
+  - '&win_sleep'
+  - OUT TOG
+  - '&bootloader'
+  - F7
+  - F8
+  - F9
+  - F12
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
 combos:
 - p: [13, 16]
   k: CAPSLOCK
   l: [DEF]
-  draw_separate: true
 - p: [20, 21]
   k: Ctl+ X
   l: [DEF]
@@ -103,7 +162,6 @@ combos:
   l: [DEF]
 - p: [14, 15]
   k: '&key_repeat'
-  draw_separate: true
 - p: [10, 11]
   k: Ctl+ S
   l: [DEF]
@@ -116,4 +174,3 @@ combos:
 - p: [1, 2, 0]
   k: Alt+ F4
   l: [DEF]
-  draw_separate: true

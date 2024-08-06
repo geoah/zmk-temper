@@ -14,10 +14,13 @@ jobs:
     permissions:
       contents: write  # allow workflow to commit to the repo
     with:
-      # commit_message: "doc: update keymap image"           # commit message for the changes
+      commit_message: "[Draw] ${{ github.event.head_commit.message }}"
       amend_commit: true
-      keymap_patterns: "config/temper.keymap"                          # path to the keymaps to parse
-      config_path: "keymap_img/keymap_drawer.config.yaml"  # config file, ignored if it does not exist
+      fail_on_error: true
+      install_branch: "main"
+      keymap_patterns: "config/*.keymap"
+      config_path: "keymap-drawer/temper_keymap_config.yaml"
+      json_path: "config"
       output_folder: "keymap_img"                          # path to save produced SVG and keymap YAML files
       # parse_args: "temper:'-c 10'"                         # map of extra args to pass to `keymap parse`, e.g. "corne:'-l Def Lwr Rse' cradio:''"
       draw_args: "temper:' -s DEF NUM NAV FUN'"   # map of extra args to pass to `keymap draw`, e.g. "corne:'-k corne_rotated' cradio:'-k paroxysm'"
