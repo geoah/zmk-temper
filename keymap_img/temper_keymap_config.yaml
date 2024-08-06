@@ -121,7 +121,7 @@ parse_config:
 
     '&kp LC(F)': $$mdi:text-search$$
     '&kp LC(W)': $$mdi:close-box-outline$$
-    '&kp LA(F4)': $$mdi:close-box-outline$$
+    '&kp LA(F4)': $$mdi:gun$$
 
     '&kp LC(DE_PLUS)': $$mdi:magnify-plus-outline$$
     '&kp LC(DE_MINUS)': $$mdi:magnify-minus-outline$$
