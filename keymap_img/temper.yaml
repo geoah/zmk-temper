@@ -1,4 +1,4 @@
-layout: {qmk_keyboard: chocofi}
+layout: {qmk_keyboard: berylline}
 layers:
   DEF:
   - [Q, W, E, R, T, Y, U, I, O, P]
