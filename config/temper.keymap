@@ -165,6 +165,12 @@
             key-positions = <1 2>;
             layers = <0>;
         };
+
+        kill {
+            bindings = <&kp LA(F4)>;
+            key-positions = <1 2 0>;
+            layers = <0>;
+        };
     };
 
     macros {
