@@ -108,3 +108,6 @@ combos:
 - p: [1, 2]
   k: Ctl+ W
   l: [DEF]
+- p: [1, 2, 0]
+  k: Alt+ F4
+  l: [DEF]
