@@ -89,7 +89,7 @@ layers:
     - F11
   - - ''
     - ''
-    - {t: '$$mdi:bluetooth$$', s: '$$mdi:cog$$', type: text_with_symbol}
+    - {t: '$$mdi:bluetooth$$', s: '$$mdi:cogs$$', type: text_with_symbol}
     - ''
     - ''
     - ''
