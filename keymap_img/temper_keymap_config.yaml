@@ -305,6 +305,7 @@ parse_config:
   - DE_
   zmk_keycode_map:
     LALT: ALT
+    RALT: ALT
     SPACE: $$mdi:keyboard-space$$
     ESC: $$mdi:keyboard-esc$$
     ESCAPE: $$mdi:keyboard-esc$$
@@ -370,8 +371,8 @@ parse_config:
     RIGHT ARROW: $$mdi:arrow-right$$
     LEFT_ALT: ALT
     RIGHT_ALT: ALT
-    PG_UP: Page Up
-    PG_DN: Page Down
+    PG_UP: $$mdi:format-vertical-align-top$$
+    PG_DN: $$mdi:format-vertical-align-bottom$$
     PAGE_UP: $$mdi:format-vertical-align-top$$
     PAGE_DOWN: $$mdi:format-vertical-align-bottom$$
     HOME: $$mdi:format-horizontal-align-left$$
@@ -457,5 +458,7 @@ parse_config:
     caps:
       align: top
       offset: 1
+    num_lock:
+      align: top
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
