@@ -66,6 +66,9 @@
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
+<svg id="mdi:pistol">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pistol" viewBox="0 0 24 24"><path d="M7,5H23V9H22V10H16A1,1 0 0,0 15,11V12A2,2 0 0,1 13,14H9.62C9.24,14 8.89,14.22 8.72,14.56L6.27,19.45C6.1,19.79 5.76,20 5.38,20H2C2,20 -1,20 3,14C3,14 6,10 2,10V5H3L3.5,4H6.5L7,5M14,12V11A1,1 0 0,0 13,10H12C12,10 11,11 12,12A2,2 0 0,1 10,10A1,1 0 0,0 9,11V12A1,1 0 0,0 10,13H13A1,1 0 0,0 14,12Z" /></svg>
+</svg>
 <svg id="mdi:play-pause">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-play-pause" viewBox="0 0 24 24"><path d="M3,5V19L11,12M13,19H16V5H13M18,5V19H21V5" /></svg>
 </svg>
@@ -80,6 +83,9 @@
 </svg>
 <svg id="mdi:skip-forward">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-skip-forward" viewBox="0 0 24 24"><path d="M4,5V19L11,12M18,5V19H20V5M11,5V19L18,12" /></svg>
+</svg>
+<svg id="mdi:sleep">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-sleep" viewBox="0 0 24 24"><path d="M23,12H17V10L20.39,6H17V4H23V6L19.62,10H23V12M15,16H9V14L12.39,10H9V8H15V10L11.62,14H15V16M7,20H1V18L4.39,14H1V12H7V14L3.62,18H7V20Z" /></svg>
 </svg>
 <svg id="mdi:toggle-switch">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-toggle-switch" viewBox="0 0 24 24"><path d="M17,7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7M17,15A3,3 0 0,1 14,12A3,3 0 0,1 17,9A3,3 0 0,1 20,12A3,3 0 0,1 17,15Z" /></svg>
@@ -513,7 +519,7 @@ rect.held, rect.combo.held {
 <path d="M89,54 l41,-18" class="combo"/>
 <path d="M89,54 l-42,23" class="combo"/>
 <rect rx="6" ry="6" x="75" y="41" width="28" height="26" class="combo"/>
-<use href="#mdi:close-box-outline" xlink:href="#mdi:close-box-outline" x="82" y="47" height="14" width="14.0" class="combo tap glyph mdi:close-box-outline"/>
+<use href="#mdi:pistol" xlink:href="#mdi:pistol" x="82" y="47" height="14" width="14.0" class="combo tap glyph mdi:pistol"/>
 </g>
 </g>
 </g>
@@ -918,7 +924,7 @@ rect.held, rect.combo.held {
 <g transform="translate(208, 50)" class="key keypos-3">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<text x="0" y="-4" class="key tap"><tspan style="font-size: 70%">&amp;win_sleep</tspan></text>
+<use href="#mdi:sleep" xlink:href="#mdi:sleep" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:sleep"/>
 </g>
 <g transform="translate(267, 58)" class="key toggle keypos-4">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key toggle side"/>

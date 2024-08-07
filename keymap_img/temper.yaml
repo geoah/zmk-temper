@@ -69,7 +69,7 @@ layers:
   - - $$mdi:progress-download$$
     - ''
     - PRINTSCREEN
-    - '&win_sleep'
+    - $$mdi:sleep$$
     - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
     - $$mdi:progress-download$$
     - F7
@@ -127,5 +127,5 @@ combos:
   k: $$mdi:close-box-outline$$
   l: [DEF]
 - p: [1, 2, 0]
-  k: $$mdi:close-box-outline$$
+  k: $$mdi:pistol$$
   l: [DEF]
