@@ -48,7 +48,7 @@ layers:
     - '0'
   NAV:
   - ['$$mdi:keyboard-esc$$', '$$mdi:volume-mute$$', '$$mdi:volume-minus$$', '$$mdi:volume-plus$$', '', '', '$$mdi:format-horizontal-align-left$$', '$$mdi:arrow-up$$',
-    PAGE UP, '']
+    '$$mdi:format-vertical-align-top$$', '']
   - - {t: '$$mdi:microsoft-windows$$', h: '$$mdi:circle-small$$'}
     - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
     - {t: ALT, h: '$$mdi:circle-small$$'}
@@ -59,7 +59,8 @@ layers:
     - $$mdi:arrow-down$$
     - $$mdi:arrow-right$$
     - ''
-  - ['', '$$mdi:skip-backward$$', '$$mdi:play-pause$$', '$$mdi:skip-forward$$', '', '', '$$mdi:format-horizontal-align-right$$', '', PAGE DOWN, '']
+  - ['', '$$mdi:skip-backward$$', '$$mdi:play-pause$$', '$$mdi:skip-forward$$', '', '', '$$mdi:format-horizontal-align-right$$', '', '$$mdi:format-vertical-align-bottom$$',
+    '']
   - - {t: '$$mdi:chevron-down$$', type: trans}
     - ''
     - ''
