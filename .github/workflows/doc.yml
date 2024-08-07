@@ -17,8 +17,8 @@ jobs:
       contents: write  # allow workflow to commit to the repo
     with:
       commit_message: "[Draw] ${{ github.event.head_commit.message }}"
-      amend_commit: true
-      fail_on_error: true
+      # amend_commit: true
+      # fail_on_error: true
       install_branch: "main"
       keymap_patterns: "config/temper.keymap"
       config_path: "keymap_img/temper_keymap_config.yaml"
