@@ -47,14 +47,14 @@ layers:
     - {t: '$$mdi:chevron-down$$', type: trans}
     - '0'
   NAV:
-  - [ESCAPE, '$$mdi:volume-mute$$', '$$mdi:volume-minus$$', '$$mdi:volume-plus$$', '', '', '$$mdi:format-horizontal-align-left$$', UP ARROW, PAGE UP, '']
+  - [ESCAPE, '$$mdi:volume-mute$$', '$$mdi:volume-minus$$', '$$mdi:volume-plus$$', '', '', '$$mdi:format-horizontal-align-left$$', '$$mdi:arrow-up$$', PAGE UP, '']
   - - {t: LEFT GUI, h: '$$mdi:circle-small$$'}
     - {t: '$$mdi:apple-keyboard-control$$', h: '$$mdi:circle-small$$'}
     - {t: LEFT ALT, h: '$$mdi:circle-small$$'}
     - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
     - ''
     - ''
-    - LEFT ARROW
+    - $$mdi:arrow-left$$
     - $$mdi:arrow-down$$
     - $$mdi:arrow-right$$
     - ''
