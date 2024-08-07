@@ -259,14 +259,43 @@ parse_config:
       type: text_with_symbol
     
   zmk_combos:
-    combo_repeat:
-      draw_separate: true
     combo_kill:
+      p: [1, 2, 0]
+      k: $$mdi:pistol$$ 
+      l: [DEF]
+      draw_separate: true 
+    combo_repeat:
+      p: [14, 15]
+      k: $$mdi:repeat$$ 
       draw_separate: true
     combo_caps:
-      draw_separate: False
-  zmk_combos:
-    {"combo_kill":{p: [1, 2, 0], k: $$mdi:pistol$$, l: [DEF], draw_separate: true},"combo_repeat":{p: [14, 15], k: $$mdi:repeat$$, draw_separate: true},"combo_caps":{p: [13, 16], k: $$mdi:apple-keyboard-caps$$, draw_separate: true}}
+      p: [13, 16]
+      k: $$mdi:apple-keyboard-caps$$
+      draw_separate: true
+    combo_close:
+      p: [1, 2]
+      k: $$mdi:close-box-outline$$
+      l: [DEF]
+    combo_escape:
+      p: [0, 1]
+      k: ESCAPE
+      l: [DEF]
+    combo_paste:
+      p: [22, 23]
+      k: $$mdi:content-paste$$
+      l: [DEF]
+    combo_copy:
+      p: [21, 22]
+      k: $$mdi:content-copy$$
+      l: [DEF]
+    combo_cut:
+      p: [20, 21]
+      k: $$mdi:content-cut$$
+      l: [DEF]
+    combo_save:
+      p: [10, 11]
+      k: $$mdi:content-save$$
+      l: [DEF]
       
   zmk_keycode_map:
     LALT: ALT
@@ -336,6 +365,12 @@ parse_config:
     DOWN: $$mdi:arrow-down$$
     LEFT: $$mdi:arrow-left$$
     RIGHT: $$mdi:arrow-right$$
+
+    UP ARROW: $$mdi:arrow-up$$
+    DOWN ARROW: $$mdi:arrow-down$$
+    LEFT ARROW: $$mdi:arrow-left$$
+    RIGHT ARROW: $$mdi:arrow-right$$
+
     
     PG_UP: Page Up
     PG_DN: Page Down
