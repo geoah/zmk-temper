@@ -132,8 +132,6 @@ parse_config:
     '&kp LC(N0)': $$mdi:magnify-remove-outline$$
 
     '&kp LG(L)': $$mdi:lock-outline$$
-
-    '&kp PRINTSCREEN': $$mdi:monitor-screenshot$$
       
     '&td_sqt_dqt':
       tap: "'"
@@ -347,6 +345,7 @@ parse_config:
     KP_NLCK: $$mdi:numeric-off$$
 
     PSCRN: $$mdi:monitor-screenshot$$
+    PRINTSCREEN: $$mdi:monitor-screenshot$$
     PAUSE_BREAK: Pause Break
     
     C_PP: $$mdi:play-pause$$
