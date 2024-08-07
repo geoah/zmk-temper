@@ -1,4 +1,3 @@
-layout: {qmk_keyboard: chocofi}
 layers:
   DEF:
   - Q
@@ -32,10 +31,10 @@ layers:
   - .
   - /
   - $$mdi:keyboard-tab$$
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-space$$
   - ENTER
-  - {t: '$$mdi:backspace-outline$$', h: NAV}
+  - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-outline$$'}
   - FUN
   NUM:
   - '`'
@@ -75,14 +74,14 @@ layers:
   - {t: '$$mdi:chevron-down$$', type: trans}
   - '0'
   NAV:
-  - $$mdi:keyboard-esc$$
+  - ESCAPE
   - $$mdi:volume-mute$$
   - $$mdi:volume-minus$$
   - $$mdi:volume-plus$$
   - ''
   - ''
-  - HOME
-  - $$mdi:arrow-up$$
+  - $$mdi:format-horizontal-align-left$$
+  - UP ARROW
   - PAGE UP
   - ''
   - {t: LEFT GUI, h: '$$mdi:circle-small$$'}
@@ -91,7 +90,7 @@ layers:
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
   - ''
   - ''
-  - $$mdi:arrow-left$$
+  - LEFT ARROW
   - $$mdi:arrow-down$$
   - $$mdi:arrow-right$$
   - ''
@@ -101,7 +100,7 @@ layers:
   - $$mdi:skip-forward$$
   - ''
   - ''
-  - END
+  - $$mdi:format-horizontal-align-right$$
   - ''
   - PAGE DOWN
   - ''
@@ -151,7 +150,6 @@ layers:
 combos:
 - p: [13, 16]
   k: $$mdi:apple-keyboard-caps$$
-
   l: [DEF]
 - p: [20, 21]
   k: $$mdi:content-cut$$
@@ -164,7 +162,6 @@ combos:
   l: [DEF]
 - p: [14, 15]
   k: $$mdi:repeat$$
-  draw_separate: true
 - p: [10, 11]
   k: $$mdi:content-save$$
   l: [DEF]
@@ -175,6 +172,5 @@ combos:
   k: $$mdi:close-box-outline$$
   l: [DEF]
 - p: [1, 2, 0]
-  k: $$mdi:pistol$$
+  k: $$mdi:close-box-outline$$
   l: [DEF]
-  draw_separate: true
