@@ -25,7 +25,7 @@ layers:
     - (
     - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
     - $
-    - {t: /, s: '|'}
+    - {t: /, s: \}
     - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
     - '5'
     - '6'
