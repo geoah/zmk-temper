@@ -84,6 +84,7 @@ parse_config:
     '&hml LA(LCTRL) TAB': $$mdi:keyboard-tab$$
     '&hml_repeat LS(LCTRL) 0': $$mdi:repeat$$
     '&key_repeat': $$mdi:repeat$$
+    '&win_sleep': $$mdi:sleep$$
     '&caps_word': $$mdi:caps-lock$$
     '&mt LA(F4) LC(W)': $$mdi:close-box-outline$$
     '&alt_tabber': $$mdi:swap-horizontal$$
@@ -122,7 +123,7 @@ parse_config:
 
     '&kp LC(F)': $$mdi:text-search$$
     '&kp LC(W)': $$mdi:close-box-outline$$
-    '&kp LA(F4)': $$mdi:close-box-outline$$
+    '&kp LA(F4)': $$mdi:pistol$$
        
     
     '&kp LC(DE_PLUS)': $$mdi:magnify-plus-outline$$
