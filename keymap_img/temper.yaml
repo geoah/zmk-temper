@@ -133,3 +133,6 @@ combos:
   k: $$mdi:pistol$$
   l: [DEF]
   a: top
+- p: [16, 17, 18]
+  k: $$mdi:numeric-off$$
+  l: [NUM]
