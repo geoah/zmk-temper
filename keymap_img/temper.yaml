@@ -80,7 +80,7 @@ layers:
   - $$mdi:volume-plus$$
   - ''
   - ''
-  - HOME
+  - $$mdi:format-horizontal-align-left$$
   - UP ARROW
   - PAGE UP
   - ''
@@ -100,7 +100,7 @@ layers:
   - $$mdi:skip-forward$$
   - ''
   - ''
-  - END
+  - $$mdi:format-horizontal-align-right$$
   - ''
   - PAGE DOWN
   - ''
