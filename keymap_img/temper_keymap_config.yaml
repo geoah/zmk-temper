@@ -155,7 +155,7 @@ parse_config:
     
     '&bt BT_CLR':
       tap: $$mdi:bluetooth$$
-      shifted: $$mdi:cog$$
+      shifted: $$mdi:cogs$$
       type: text_with_symbol
     '&bts 0':
       tap: $$mdi:bluetooth-connect$$
