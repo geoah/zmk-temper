@@ -1,6 +1,9 @@
 # Chocofi Temper ZMK Config
 
 ZMK config for the [Chocofi Temper](https://github.com/raeedcho/chocofi-temper). 
+
+![Temper Keyboards](keymap_img/temper.jpg)
+
 In addition to the original ZMK features in [raeedcho](https://github.com/raeedcho/temper-zmk-config), [Nabizzle](https://github.com/Nabizzle/temper-zmk-config-view) and [Englmaxi](https://github.com/englmaxi/zmk-dongle-display) repos, I have added and tested the following:
 
 * Nice view compatibility
