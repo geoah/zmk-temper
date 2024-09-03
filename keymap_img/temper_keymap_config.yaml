@@ -468,7 +468,5 @@ parse_config:
       offset: 1
     num_lock:
       align: top
-    refresh:
-    
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
