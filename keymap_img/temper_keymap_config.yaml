@@ -75,6 +75,7 @@ parse_config:
     '&bkt_macro': '{}'
     '&lgt_macro': <>
     '&kp LC(BSPC)': $$mdi:backspace$$
+    '&kp LC(F5)': $$mdi:refresh$$
     '&kp LC(DEL)': $$mdi:backspace-reverse$$
     '&kp LS(TAB)': $$mdi:keyboard-tab-reverse$$
     '&kp LC(TAB)': $$mdi:arrow-right-bold-box$$
@@ -467,5 +468,7 @@ parse_config:
       offset: 1
     num_lock:
       align: top
+    refresh:
+    
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
