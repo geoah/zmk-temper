@@ -138,3 +138,5 @@ combos:
   k: $$mdi:numeric-off$$
   l: [NUM]
   a: top
+- p: [7, 8]
+  k: $$mdi:refresh$$
