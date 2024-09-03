@@ -177,6 +177,11 @@
             key-positions = <16 17 18>;
             layers = <1>;
         };
+
+        refresh {
+            bindings = <&kp LC(F5)>;
+            key-positions = <7 8>;
+        };
     };
 
     macros {
