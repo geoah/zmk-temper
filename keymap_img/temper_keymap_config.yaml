@@ -48,6 +48,13 @@ draw_config:
   glyph_hold_size: 8
   glyph_shifted_size: 8
   glyphs: {}
+  glyph_urls:
+    tabler: https://unpkg.com/@tabler/icons/icons/outline/{}.svg
+    tablerf: https://unpkg.com/@tabler/icons/icons/filled/{}.svg
+    mdi: https://raw.githubusercontent.com/Templarian/MaterialDesign-SVG/master/svg/{}.svg
+    mdil: https://raw.githubusercontent.com/Pictogrammers/MaterialDesignLight/master/svg/{}.svg
+    material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
+  use_local_cache: true
 parse_config:
   preprocess: true
   skip_binding_parsing: false
