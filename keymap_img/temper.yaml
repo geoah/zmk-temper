@@ -69,7 +69,7 @@ layers:
     - ''
   FUN:
   - - $$mdi:progress-download$$
-    - ''
+    - '&soft_off'
     - $$mdi:monitor-screenshot$$
     - $$mdi:sleep$$
     - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$', type: toggle}
