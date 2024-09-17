@@ -515,10 +515,10 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap layer-activator">FUN</text>
 </a></g>
 <g class="combo combopos-0">
-<path d="M394,21 h-180 a6.0,6.0 0 0 0 -6.0,6.0 v60" class="combo"/>
-<path d="M394,21 h180 a6.0,6.0 0 0 1 6.0,6.0 v60" class="combo"/>
-<rect rx="6" ry="6" x="380" y="8" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="387" y="14" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M394,150 h-133 a6.0,6.0 0 0 0 -6.0,6.0 v61" class="combo"/>
+<path d="M394,150 h133 a6.0,6.0 0 0 1 6.0,6.0 v60" class="combo"/>
+<rect rx="6" ry="6" x="380" y="137" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="387" y="143" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="45" y="167" width="28" height="26" class="combo"/>
