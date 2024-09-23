@@ -21,8 +21,8 @@ layers:
   NUM:
   - ['`', '@', '{', '}', '%', '*', '7', '8', '9', +]
   - - ^
-    - '#'
-    - (
+    - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
+    - {t: (, h: ALT}
     - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
     - $
     - {t: /, s: \}
