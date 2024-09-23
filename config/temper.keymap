@@ -213,10 +213,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&kp GRAVE  &kp AT         &kp LBRC  &kp RBRC             &kp PRCNT   &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&kp CARET  &kp HASH       &kp LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
-&kp SQT    &kp AMPERSAND  &kp LBKT  &kp RBKT             &exclbarra  &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
-                          &trans    &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
+&kp GRAVE  &kp AT                 &kp LBRC           &kp RBRC             &kp PRCNT   &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
+&kp CARET  &hm LEFT_CONTROL HASH  &hm LEFT_ALT LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&kp SQT    &kp AMPERSAND          &kp LBKT           &kp RBKT             &exclbarra  &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
+                                  &trans             &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
             >;
         };
 
