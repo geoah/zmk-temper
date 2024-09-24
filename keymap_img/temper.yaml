@@ -27,8 +27,8 @@ layers:
     - $
     - {t: /, s: \}
     - {t: '4', h: '$$mdi:apple-keyboard-shift$$'}
-    - '5'
-    - '6'
+    - {t: '5', h: ALT}
+    - {t: '6', h: '$$mdi:apple-keyboard-control$$'}
     - '-'
   - - ''''
     - '&'
@@ -127,10 +127,10 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
   l: [DEF]
-- p: [1, 2]
+- p: [1, 2, 16]
   k: $$mdi:close-box-outline$$
   l: [DEF]
-- p: [1, 2, 0]
+- p: [1, 2, 0, 16]
   k: $$mdi:pistol$$
   l: [DEF]
   a: top
