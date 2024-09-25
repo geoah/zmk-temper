@@ -191,6 +191,12 @@
             bindings = <&kp LC(F5)>;
             key-positions = <7 8>;
         };
+
+        cntrl_bootloader {
+            bindings = <&bootloader>;
+            key-positions = <0 5>;
+            layers = <3>;
+        };
     };
 
     macros {
