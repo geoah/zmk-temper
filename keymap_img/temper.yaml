@@ -140,3 +140,6 @@ combos:
   a: top
 - p: [7, 8]
   k: $$mdi:refresh$$
+- p: [0, 5]
+  k: $$mdi:progress-download$$
+  l: [FUN]

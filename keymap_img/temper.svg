@@ -1147,6 +1147,12 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="655" y="25" width="28" height="26" class="combo"/>
 <use href="#mdi:refresh" xlink:href="#mdi:refresh" x="662" y="31" height="14" width="14.0" class="combo tap glyph mdi:refresh"/>
 </g>
+<g class="combo combopos-2">
+<path d="M275,72 l-226,14" class="combo"/>
+<path d="M275,72 l226,-14" class="combo"/>
+<rect rx="6" ry="6" x="261" y="59" width="28" height="26" class="combo"/>
+<use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="268" y="65" height="14" width="14.0" class="combo tap glyph mdi:progress-download"/>
+</g>
 </g>
 </g>
 </svg>
