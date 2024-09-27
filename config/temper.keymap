@@ -171,14 +171,14 @@
 
         close {
             bindings = <&kp LC(W)>;
-            key-positions = <1 2 16>;
-            layers = <0>;
+            key-positions = <1 0>;
+            layers = <2>;
         };
 
         kill {
             bindings = <&kp LA(F4)>;
-            key-positions = <1 2 0 16>;
-            layers = <0>;
+            key-positions = <1 2 0>;
+            layers = <1>;
         };
 
         num_lock {
