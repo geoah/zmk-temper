@@ -132,7 +132,7 @@ combos:
   l: [NAV]
 - p: [1, 2, 0]
   k: $$mdi:pistol$$
-  l: [NUM]
+  l: [NAV]
   a: top
 - p: [16, 17, 18]
   k: $$mdi:numeric-off$$
