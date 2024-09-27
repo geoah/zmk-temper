@@ -127,12 +127,12 @@ combos:
 - p: [0, 1]
   k: $$mdi:keyboard-esc$$
   l: [DEF]
-- p: [1, 2, 16]
+- p: [1, 0]
   k: $$mdi:close-box-outline$$
-  l: [DEF]
-- p: [1, 2, 0, 16]
+  l: [NAV]
+- p: [1, 2, 0]
   k: $$mdi:pistol$$
-  l: [DEF]
+  l: [NUM]
   a: top
 - p: [16, 17, 18]
   k: $$mdi:numeric-off$$
