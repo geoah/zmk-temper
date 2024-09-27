@@ -178,7 +178,7 @@
         kill {
             bindings = <&kp LA(F4)>;
             key-positions = <1 2 0>;
-            layers = <1>;
+            layers = <2>;
         };
 
         num_lock {
