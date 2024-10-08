@@ -116,7 +116,7 @@ layers:
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
   - - {t: '$$mdi:chevron-down$$', type: trans}
-    - '&calc'
+    - Meh+ F6
     - Meh+ F9
     - Meh+ F8
     - {t: '$$mdi:chevron-down$$', type: trans}
