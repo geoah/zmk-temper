@@ -86,7 +86,7 @@ parse_config:
     '&kp LC(LS(LA(LGUI)))': $$mdi:star-four-points-outline$$
     '&kp LS(LA(LC(F6)))': $$mdi:calculator$$
     '&kp LC(LS(LA(F9)))': $$mdi:console$$
-    '&kp LS(LA(LC(F8)))': $$tabler:brand-spotify$$
+    '&kp LS(LA(LC(F8)))': $$mdi:spotify$$
     '&kp LS(LA(LC(F7)))': $$mdi:store-settings$$
     '&kp LG(I)': $$mdi:cog$$
     '&kp LG(E)': $$mdi:folder-home$$
