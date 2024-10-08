@@ -116,14 +116,14 @@ layers:
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
   - - {t: '$$mdi:chevron-down$$', type: trans}
-    - Meh+ F6
-    - Meh+ F9
-    - Meh+ F8
+    - $$mdi:calculator$$
+    - $$material-symbols:terminal-sharp$$
+    - $$tabler:brand-spotify$$
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
-    - Meh+ F7
-    - Gui+ I
-    - Gui+ E
+    - $$mdi:store-settings$$
+    - $$material-symbols:settings-outline$$
+    - $$mdi:folder-home$$
     - {t: '$$mdi:chevron-down$$', type: trans}
   - - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
