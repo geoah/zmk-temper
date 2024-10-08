@@ -88,7 +88,7 @@ parse_config:
     '&kp LC(LS(LA(F9)))': $$mdi:console$$
     '&kp LS(LA(LC(F8)))': $$tabler:brand-spotify$$
     '&kp LS(LA(LC(F7)))': $$mdi:store-settings$$
-    '&kp LG(I)': $$mdi:cog-outline$$
+    '&kp LG(I)': $$mdi:cog$$
     '&kp LG(E)': $$mdi:folder-home$$
     '&kp LC(HOME)': $$mdi:format-vertical-align-top$$
     '&kp LC(END)': $$mdi:format-vertical-align-bottom$$
