@@ -13,6 +13,7 @@
 #define NUM 1
 #define NAV 2
 #define FUN 3
+#define MAC 4
 
 / {
     conditional_layers {
@@ -265,14 +266,13 @@
         };
 
         mac_layer {
+            display-name = "MAC";
             bindings = <
 &trans  &trans              &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
 &trans  &kp LS(LA(LC(F6)))  &kp LC(LS(LA(F9)))  &kp LS(LA(LC(F8)))  &trans  &trans  &kp LS(LA(LC(F7)))  &kp LG(I)  &kp LG(E)  &trans
 &trans  &trans              &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
                             &trans              &trans              &trans  &trans  &trans              &trans
             >;
-
-            label = "MAC";
         };
     };
 };
