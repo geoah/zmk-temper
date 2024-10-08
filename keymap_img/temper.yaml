@@ -118,7 +118,7 @@ layers:
   - - {t: '$$mdi:chevron-down$$', type: trans}
     - $$mdi:calculator$$
     - $$mdi:console$$
-    - $$tabler:brand-spotify$$
+    - $$mdi:spotify$$
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - $$mdi:store-settings$$

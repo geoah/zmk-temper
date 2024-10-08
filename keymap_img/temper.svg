@@ -120,6 +120,9 @@
 <svg id="mdi:sleep">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-sleep" viewBox="0 0 24 24"><path d="M23,12H17V10L20.39,6H17V4H23V6L19.62,10H23V12M15,16H9V14L12.39,10H9V8H15V10L11.62,14H15V16M7,20H1V18L4.39,14H1V12H7V14L3.62,18H7V20Z" /></svg>
 </svg>
+<svg id="mdi:spotify">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-spotify" viewBox="0 0 24 24"><path d="M17.9,10.9C14.7,9 9.35,8.8 6.3,9.75C5.8,9.9 5.3,9.6 5.15,9.15C5,8.65 5.3,8.15 5.75,8C9.3,6.95 15.15,7.15 18.85,9.35C19.3,9.6 19.45,10.2 19.2,10.65C18.95,11 18.35,11.15 17.9,10.9M17.8,13.7C17.55,14.05 17.1,14.2 16.75,13.95C14.05,12.3 9.95,11.8 6.8,12.8C6.4,12.9 5.95,12.7 5.85,12.3C5.75,11.9 5.95,11.45 6.35,11.35C10,10.25 14.5,10.8 17.6,12.7C17.9,12.85 18.05,13.35 17.8,13.7M16.6,16.45C16.4,16.75 16.05,16.85 15.75,16.65C13.4,15.2 10.45,14.9 6.95,15.7C6.6,15.8 6.3,15.55 6.2,15.25C6.1,14.9 6.35,14.6 6.65,14.5C10.45,13.65 13.75,14 16.35,15.6C16.7,15.75 16.75,16.15 16.6,16.45M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" /></svg>
+</svg>
 <svg id="mdi:store-settings">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-store-settings" viewBox="0 0 24 24"><path d="M20 6H4V4H20V6M21 12V14H20V20H18V14H14V20H4V14H3V12L4 7H20L21 12M12 14H6V18H12V14M7 24H9V22H7V24M11 24H13V22H11V24M15 24H17V22H15V24Z" /></svg>
 </svg>
@@ -137,26 +140,6 @@
 </svg>
 <svg id="mdi:volume-plus">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-volume-plus" viewBox="0 0 24 24"><path d="M3,9H7L12,4V20L7,15H3V9M14,11H17V8H19V11H22V13H19V16H17V13H14V11Z" /></svg>
-</svg>
-<svg id="tabler:brand-spotify">
-<svg
-  xmlns="http://www.w3.org/2000/svg"
- 
- 
-  viewBox="0 0 24 24"
-  fill="none"
-  stroke="currentColor"
-  stroke-width="2"
-  stroke-linecap="round"
-  stroke-linejoin="round"
-  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-spotify"
->
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
-  <path d="M8 11.973c2.5 -1.473 5.5 -.973 7.5 .527" />
-  <path d="M9 15c1.5 -1 4 -1 5 .5" />
-  <path d="M7 9c2 -1 6 -2 10 .5" />
-</svg>
 </svg>
 </defs>/* end glyphs */
 <style>/* inherit to force styles through use tags */
@@ -1232,7 +1215,7 @@ rect.held, rect.combo.held {
 <g transform="translate(208, 106)" class="key keypos-13">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<use href="#tabler:brand-spotify" xlink:href="#tabler:brand-spotify" x="-7" y="-11" height="14" width="14.0" class="key tap glyph tabler:brand-spotify"/>
+<use href="#mdi:spotify" xlink:href="#mdi:spotify" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:spotify"/>
 </g>
 <g transform="translate(267, 114)" class="key trans keypos-14">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key trans side"/>
