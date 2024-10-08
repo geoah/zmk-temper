@@ -104,8 +104,45 @@ layers:
     - ''
     - ''
     - {type: held}
+  mac:
+  - - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+  - - {t: '$$mdi:chevron-down$$', type: trans}
+    - CALCULATOR
+    - Meh+ F7
+    - Meh+ F8
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - Meh+ F7
+    - Gui+ I
+    - Gui+ E
+    - {t: '$$mdi:chevron-down$$', type: trans}
+  - - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+  - - {t: '$$mdi:chevron-down$$', type: trans}
+    - {type: held}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {t: '$$mdi:chevron-down$$', type: trans}
+    - {type: held}
+    - {t: '$$mdi:chevron-down$$', type: trans}
 combos:
-- p: [31, 34]
+- p: [14, 15]
   k: $$mdi:apple-keyboard-caps$$
   l: [DEF]
   a: top
@@ -119,8 +156,6 @@ combos:
 - p: [22, 23]
   k: $$mdi:content-paste$$
   l: [DEF]
-- p: [14, 15]
-  k: $$mdi:repeat$$
 - p: [10, 11]
   k: $$mdi:content-save$$
   l: [DEF]
