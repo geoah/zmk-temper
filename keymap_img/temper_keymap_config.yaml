@@ -85,10 +85,10 @@ parse_config:
     '&kp LC(LS(LALT))': $$mdi:star-three-points-outline$$
     '&kp LC(LS(LA(LGUI)))': $$mdi:star-four-points-outline$$
     '&kp LS(LA(LC(F6)))': $$mdi:calculator$$
-    '&kp LC(LS(LA(F9)))': $$material-symbols:terminal-sharp$$
+    '&kp LC(LS(LA(F9)))': $$mdi:console$$
     '&kp LS(LA(LC(F8)))': $$tabler:brand-spotify$$
     '&kp LS(LA(LC(F7)))': $$mdi:store-settings$$
-    '&kp LG(I)': $$material-symbols:settings-outline$$
+    '&kp LG(I)': $$mdi:cog-outline$$
     '&kp LG(E)': $$mdi:folder-home$$
     '&kp LC(HOME)': $$mdi:format-vertical-align-top$$
     '&kp LC(END)': $$mdi:format-vertical-align-bottom$$
@@ -245,6 +245,7 @@ parse_config:
     mod_combiner: '{mod_1}+{mod_2}'
     special_combinations:
       left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
   qmk_remove_keycode_prefix:
   - KC_
   qmk_keycode_map:
