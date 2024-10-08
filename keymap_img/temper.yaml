@@ -180,3 +180,5 @@ combos:
   l: [FUN]
   a: top
   o: 1.0
+- p: [31, 34]
+  k: MAC
