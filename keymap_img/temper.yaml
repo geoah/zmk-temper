@@ -115,7 +115,7 @@ layers:
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
-  - - Meh+ F5
+  - - $$mdi:microsoft-visual-studio-code$$
     - $$mdi:calculator$$
     - $$mdi:console$$
     - $$mdi:spotify$$
