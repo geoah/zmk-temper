@@ -473,6 +473,8 @@ parse_config:
     caps:
       align: top
       offset: 1
+    mac_layer:
+      hidden: true
     cntrl_bootloader:
       align: top
       offset: 1
