@@ -178,3 +178,5 @@ combos:
 - p: [0, 5]
   k: $$mdi:progress-download$$
   l: [FUN]
+  a: top
+  o: 1.0
