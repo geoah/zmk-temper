@@ -84,6 +84,7 @@ parse_config:
     '&kp LC(LG(RIGHT))': $$mdi:arrow-right-bold-box-outline$$
     '&kp LC(LS(LALT))': $$mdi:star-three-points-outline$$
     '&kp LC(LS(LA(LGUI)))': $$mdi:star-four-points-outline$$
+    '&kp LS(LA(LC(F5)))': $$mdi:microsoft-visual-studio-code$$
     '&kp LS(LA(LC(F6)))': $$mdi:calculator$$
     '&kp LC(LS(LA(F9)))': $$mdi:console$$
     '&kp LS(LA(LC(F8)))': $$mdi:spotify$$
