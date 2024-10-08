@@ -200,6 +200,11 @@
             key-positions = <0 5>;
             layers = <3>;
         };
+
+        mac_layer {
+            bindings = <&mo 4>;
+            key-positions = <31 34>;
+        };
     };
 
     macros {
