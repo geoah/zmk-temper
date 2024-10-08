@@ -212,6 +212,13 @@
             #binding-cells = <0>;
             bindings = <&kp LG(X) &kp U &kp S>;
         };
+
+        calc: calc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(R) &kp C &kp A &kp L &kp C &kp ENTER>;
+            label = "CALC";
+        };
     };
 
     keymap {
@@ -258,13 +265,14 @@
         };
 
         mac_layer {
-            display-name = "MAC";
             bindings = <
-&trans  &trans            &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
-&trans  &kp K_CALCULATOR  &kp LC(LS(LA(F9)))  &kp LS(LA(LC(F8)))  &trans  &trans  &kp LS(LA(LC(F7)))  &kp LG(I)  &kp LG(E)  &trans
-&trans  &trans            &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
-                          &trans              &trans              &trans  &trans  &trans              &trans
+&trans  &trans  &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
+&trans  &calc   &kp LC(LS(LA(F9)))  &kp LS(LA(LC(F8)))  &trans  &trans  &kp LS(LA(LC(F7)))  &kp LG(I)  &kp LG(E)  &trans
+&trans  &trans  &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
+                &trans              &trans              &trans  &trans  &trans              &trans
             >;
+
+            label = "MAC";
         };
     };
 };
