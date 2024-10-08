@@ -15,7 +15,14 @@
 #define FUN 3
 
 / {
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        macro {
+            if-layers = <1 2>;
+            then-layer = <4>;
+        };
+    };
 
     behaviors {
         media: media {
@@ -129,7 +136,7 @@
 
         caps {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <31 34>;
+            key-positions = <14 15>;
             timeout-ms = <100>;
             layers = <0>;
         };
@@ -150,11 +157,6 @@
             bindings = <&kp LC(V)>;
             key-positions = <22 23>;
             layers = <0>;
-        };
-
-        repeat {
-            bindings = <&key_repeat>;
-            key-positions = <14 15>;
         };
 
         save {
@@ -253,6 +255,17 @@
 &none         &none         &bt BT_CLR       &none         &none         &none        &kp F1  &kp F2  &kp F3  &kp F10
                             &none            &none         &none         &none        &none   &none
             >;
+        };
+
+        mac_layer {
+            bindings = <
+&trans  &trans            &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
+&trans  &kp K_CALCULATOR  &kp LC(LS(LA(F7)))  &kp LS(LA(LC(F8)))  &trans  &trans  &kp LS(LA(LC(F7)))  &kp LG(I)  &kp LG(E)  &trans
+&trans  &trans            &trans              &trans              &trans  &trans  &trans              &trans     &trans     &trans
+                          &trans              &trans              &trans  &trans  &trans              &trans
+            >;
+
+            label = "MAC";
         };
     };
 };
