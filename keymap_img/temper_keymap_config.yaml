@@ -473,6 +473,9 @@ parse_config:
     caps:
       align: top
       offset: 1
+    cntrl_bootloader:
+      align: top
+      offset: 1
     num_lock:
       align: top
   zmk_preamble: '#define KEYMAP_DRAWER'
