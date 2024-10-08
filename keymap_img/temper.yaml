@@ -117,12 +117,12 @@ layers:
     - {t: '$$mdi:chevron-down$$', type: trans}
   - - {t: '$$mdi:chevron-down$$', type: trans}
     - $$mdi:calculator$$
-    - $$material-symbols:terminal-sharp$$
+    - $$mdi:console$$
     - $$tabler:brand-spotify$$
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - $$mdi:store-settings$$
-    - $$material-symbols:settings-outline$$
+    - $$mdi:cog-outline$$
     - $$mdi:folder-home$$
     - {t: '$$mdi:chevron-down$$', type: trans}
   - - {t: '$$mdi:chevron-down$$', type: trans}
