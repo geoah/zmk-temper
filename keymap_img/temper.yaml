@@ -19,7 +19,16 @@ layers:
     - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-outline$$'}
     - FUN
   NUM:
-  - ['`', '@', '{', '}', '%', '*', '7', '8', '9', +]
+  - - '`'
+    - '@'
+    - '{'
+    - '}'
+    - {t: '%', s: AGr+ 5}
+    - '*'
+    - '7'
+    - '8'
+    - '9'
+    - +
   - - ^
     - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
     - {t: (, h: ALT}
