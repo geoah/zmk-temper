@@ -130,10 +130,10 @@ layers:
     - $$mdi:spotify$$
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
-    - $$mdi:store-settings$$
-    - $$mdi:cog$$
-    - $$mdi:folder-home$$
     - {t: '$$mdi:chevron-down$$', type: trans}
+    - $$mdi:store-settings$$
+    - $$mdi:folder-home$$
+    - $$mdi:cog$$
   - - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
     - {t: '$$mdi:chevron-down$$', type: trans}
