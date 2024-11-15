@@ -214,6 +214,18 @@
             bindings = <&mo 4>;
             key-positions = <31 34>;
         };
+
+        previous {
+            bindings = <&kp LA(LEFT_ARROW)>;
+            key-positions = <16 17>;
+            layers = <2>;
+        };
+
+        next {
+            bindings = <&kp LA(RIGHT_ARROW)>;
+            key-positions = <17 18>;
+            layers = <2>;
+        };
     };
 
     macros {
