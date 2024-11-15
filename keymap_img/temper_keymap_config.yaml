@@ -112,6 +112,8 @@ parse_config:
     '&kp LC(DE_MINUS)': $$mdi:magnify-minus-outline$$
     '&kp LC(N0)': $$mdi:magnify-remove-outline$$
     '&kp LG(L)': $$mdi:lock-outline$$
+    '&kp LA(RIGHT_ARROW)': $$mdi:arrow-right-bold-box-outline$$
+    '&kp LA(LEFT_ARROW)': $$mdi:arrow-left-bold-box-outline$$
     '&td_sqt_dqt':
       tap: ''''
       shifted: '"'
