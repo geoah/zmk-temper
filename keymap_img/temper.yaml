@@ -193,8 +193,8 @@ combos:
   k: MAC
   hidden: true
 - p: [16, 17]
-  k: Alt+ LEFT ARROW
+  k: $$mdi:arrow-left-bold-box-outline$$
   l: [NAV]
 - p: [17, 18]
-  k: Alt+ RIGHT ARROW
+  k: $$mdi:arrow-right-bold-box-outline$$
   l: [NAV]
