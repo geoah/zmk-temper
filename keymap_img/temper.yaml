@@ -192,3 +192,9 @@ combos:
 - p: [31, 34]
   k: MAC
   hidden: true
+- p: [16, 17]
+  k: Alt+ LEFT ARROW
+  l: [NAV]
+- p: [17, 18]
+  k: Alt+ RIGHT ARROW
+  l: [NAV]
