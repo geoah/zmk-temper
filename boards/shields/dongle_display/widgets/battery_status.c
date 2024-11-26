@@ -138,9 +138,13 @@ int zmk_widget_dongle_battery_status_init(struct zmk_widget_dongle_battery_statu
         lv_obj_t *battery_label = lv_label_create(widget->obj);
 
         lv_canvas_set_buffer(image_canvas, battery_image_buffer[i], 5, 8, LV_IMG_CF_TRUE_COLOR);
-
+        if (CONFIG_ZMK_SCREEN_SIZE == 32){
+        lv_obj_align(image_canvas, LV_ALIGN_TOP_LEFT, 40 * i + 46 , 0);
+        lv_obj_align(battery_label, LV_ALIGN_TOP_LEFT, 40 * i , 0);}
+        else{
         lv_obj_align(image_canvas, LV_ALIGN_TOP_RIGHT, 0, i * 10);
         lv_obj_align(battery_label, LV_ALIGN_TOP_RIGHT, -7, i * 10);
+        }
 
         lv_obj_add_flag(image_canvas, LV_OBJ_FLAG_HIDDEN);
         lv_obj_add_flag(battery_label, LV_OBJ_FLAG_HIDDEN);
