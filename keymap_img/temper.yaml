@@ -13,7 +13,7 @@ layers:
     - ;
   - [Z, X, C, V, B, N, M, ',', ., /]
   - - $$mdi:keyboard-tab$$
-    - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: '$$mdi:backspace-reverse-outline$$'}
+    - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: NUM}
     - $$mdi:keyboard-space$$
     - ENTER
     - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-outline$$'}
