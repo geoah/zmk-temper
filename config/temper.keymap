@@ -139,6 +139,15 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT|MOD_LALT)>;
         };
+
+        del2: del2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL2";
+            bindings = <&del>, <&tog 1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
     };
 
     combos {
@@ -257,7 +266,7 @@
 &kp Q             &kp W                 &kp E            &kp R             &kp T      &kp Y      &kp U              &kp I            &kp O                  &kp P
 &weak LEFT_GUI A  &weak LEFT_CONTROL S  &hm RIGHT_ALT D  &hm LEFT_SHIFT F  &kp G      &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &weak RIGHT_CONTROL L  &kp SEMI
 &kp Z             &kp X                 &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT                &kp FSLH
-                                        &kp TAB          &del              &kp SPACE  &kp ENTER  &borrar            &mo 3
+                                        &kp TAB          &del2             &kp SPACE  &kp ENTER  &borrar            &mo 3
             >;
         };
 
