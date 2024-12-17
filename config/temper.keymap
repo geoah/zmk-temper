@@ -227,13 +227,25 @@
         previous {
             bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <16 17>;
-            layers = <2>;
+            layers = <2 0 1>;
         };
 
         next {
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <17 18>;
-            layers = <2>;
+            layers = <0 2 3>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <11 12>;
+            layers = <0 2 1>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <12 13>;
+            layers = <0 2 1>;
         };
     };
 
