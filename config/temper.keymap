@@ -152,7 +152,7 @@
         change_2: change_2 {
             compatible = "zmk,behavior-mod-morph";
             label = "CHANGE_2";
-            bindings = <&kp LEFT_ARROW>, <&to2>;
+            bindings = <&kp LEFT>, <&to2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LCTL|MOD_RCTL)>;
