@@ -64,7 +64,7 @@ layers:
     - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
     - ''
     - ''
-    - {t: LEFT ARROW, s: '&to2'}
+    - {t: '$$mdi:arrow-left$$', s: '&to2'}
     - $$mdi:arrow-down$$
     - {t: '$$mdi:arrow-right$$', s: '&to1'}
     - ''
