@@ -64,9 +64,9 @@ layers:
     - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
     - ''
     - ''
-    - $$mdi:arrow-left$$
+    - {t: LEFT ARROW, s: '&to2'}
     - $$mdi:arrow-down$$
-    - $$mdi:arrow-right$$
+    - {t: '$$mdi:arrow-right$$', s: '&to1'}
     - ''
   - ['', '$$mdi:skip-backward$$', '$$mdi:play-pause$$', '$$mdi:skip-forward$$', '', '', '$$mdi:format-horizontal-align-right$$', '', '$$mdi:format-vertical-align-bottom$$',
     '']

@@ -12,9 +12,6 @@
 <svg id="mdi:arrow-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-down" viewBox="0 0 24 24"><path d="M11,4H13V16L18.5,10.5L19.92,11.92L12,19.84L4.08,11.92L5.5,10.5L11,16V4Z" /></svg>
 </svg>
-<svg id="mdi:arrow-left">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-</svg>
 <svg id="mdi:arrow-left-bold-box-outline">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-arrow-left-bold-box-outline" viewBox="0 0 24 24"><path d="M7,12L12,7V10H16V14H12V17L7,12M21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19A2,2 0 0,1 21,5M19,5H5V19H19V5Z" /></svg>
 </svg>
@@ -904,7 +901,10 @@ rect.held, rect.combo.held {
 <g transform="translate(580, 106)" class="key keypos-16">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
-<use href="#mdi:arrow-left" xlink:href="#mdi:arrow-left" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-left"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.0em">LEFT</tspan><tspan x="0" dy="1.2em">ARROW</tspan>
+</text>
+<text x="0" y="-24" class="key shifted">&amp;to2</text>
 </g>
 <g transform="translate(639, 84)" class="key keypos-17">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
@@ -915,6 +915,7 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-22" y="-24" width="43" height="40" class="key"/>
 <use href="#mdi:arrow-right" xlink:href="#mdi:arrow-right" x="-7" y="-11" height="14" width="14.0" class="key tap glyph mdi:arrow-right"/>
+<text x="0" y="-24" class="key shifted">&amp;to1</text>
 </g>
 <g transform="translate(758, 143)" class="key keypos-19">
 <rect rx="6" ry="6" x="-28" y="-26" width="55" height="52" class="key side"/>
