@@ -29,7 +29,7 @@ layers:
     - '8'
     - '9'
     - +
-  - - ^
+  - - {t: ^, h: LEFT WIN}
     - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
     - {t: (, h: ALT}
     - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
