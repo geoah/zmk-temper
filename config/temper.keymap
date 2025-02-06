@@ -155,7 +155,7 @@
             bindings = <&kp LEFT>, <&to2>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LGUI)>;
         };
 
         change_1: change_1 {
@@ -164,7 +164,7 @@
             bindings = <&kp RIGHT>, <&to1>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LCTL|MOD_RCTL)>;
+            mods = <(MOD_LGUI)>;
         };
     };
 
@@ -317,10 +317,10 @@
         num_layer {
             display-name = "NUM";
             bindings = <
-&kp GRAVE  &kp AT                 &kp LBRC           &kp RBRC             &perc_euro  &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS
-&kp CARET  &hm LEFT_CONTROL HASH  &hm LEFT_ALT LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &kp MINUS
-&kp SQT    &kp AMPERSAND          &kp LBKT           &kp RBKT             &excl_esp   &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp EQUAL
-                                  &trans             &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
+&kp GRAVE             &kp AT                   &kp LBRC           &kp RBRC             &perc_euro  &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS
+&weak LEFT_WIN CARET  &weak LEFT_CONTROL HASH  &hm LEFT_ALT LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &kp MINUS
+&kp SQT               &kp AMPERSAND            &kp LBKT           &kp RBKT             &excl_esp   &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp EQUAL
+                                               &trans             &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
             >;
         };
 
