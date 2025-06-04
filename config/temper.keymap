@@ -139,6 +139,33 @@
             #binding-cells = <0>;
             mods = <(MOD_RALT|MOD_LALT)>;
         };
+
+        del2: del2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "DEL2";
+            bindings = <&del>, <&tog 1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        change_2: change_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CHANGE_2";
+            bindings = <&kp LEFT>, <&to2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
+
+        change_1: change_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "CHANGE_1";
+            bindings = <&kp RIGHT>, <&to1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+        };
     };
 
     combos {
@@ -218,13 +245,25 @@
         previous {
             bindings = <&kp LA(LEFT_ARROW)>;
             key-positions = <16 17>;
-            layers = <2>;
+            layers = <2 0 1>;
         };
 
         next {
             bindings = <&kp LA(RIGHT_ARROW)>;
             key-positions = <17 18>;
-            layers = <2>;
+            layers = <0 2 3>;
+        };
+
+        undo {
+            bindings = <&kp LC(Z)>;
+            key-positions = <11 12>;
+            layers = <0 2 1>;
+        };
+
+        redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <12 13>;
+            layers = <0 2 1>;
         };
     };
 
@@ -246,6 +285,20 @@
             bindings = <&kp LG(R) &kp C &kp A &kp L &kp C &kp ENTER>;
             label = "CALC";
         };
+
+        to2: to2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(F5))) &bt BT_SEL 1>;
+            label = "TO2";
+        };
+
+        to1: to1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(LA(LC(F5))) &bt BT_SEL 0>;
+            label = "TO1";
+        };
     };
 
     keymap {
@@ -257,27 +310,27 @@
 &kp Q             &kp W                 &kp E            &kp R             &kp T      &kp Y      &kp U              &kp I            &kp O                  &kp P
 &weak LEFT_GUI A  &weak LEFT_CONTROL S  &hm RIGHT_ALT D  &hm LEFT_SHIFT F  &kp G      &kp H      &hm RIGHT_SHIFT J  &hm RIGHT_ALT K  &weak RIGHT_CONTROL L  &kp SEMI
 &kp Z             &kp X                 &kp C            &kp V             &kp B      &kp N      &kp M              &kp COMMA        &kp DOT                &kp FSLH
-                                        &kp TAB          &del              &kp SPACE  &kp ENTER  &borrar            &mo 3
+                                        &kp TAB          &del2             &kp SPACE  &kp ENTER  &borrar            &mo 3
             >;
         };
 
         num_layer {
             display-name = "NUM";
             bindings = <
-&kp GRAVE  &kp AT                 &kp LBRC           &kp RBRC             &perc_euro  &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS
-&kp CARET  &hm LEFT_CONTROL HASH  &hm LEFT_ALT LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &kp MINUS
-&kp SQT    &kp AMPERSAND          &kp LBKT           &kp RBKT             &excl_esp   &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp EQUAL
-                                  &trans             &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
+&kp GRAVE             &kp AT                   &kp LBRC           &kp RBRC             &perc_euro  &kp STAR    &kp KP_NUMBER_7              &kp KP_NUMBER_8            &kp KP_NUMBER_9                &kp PLUS
+&weak LEFT_WIN CARET  &weak LEFT_CONTROL HASH  &hm LEFT_ALT LPAR  &hm LEFT_SHIFT RPAR  &kp DLLR    &barra      &hm RIGHT_SHIFT KP_NUMBER_4  &hm RIGHT_ALT KP_NUMBER_5  &hm RIGHT_CONTROL KP_NUMBER_6  &kp MINUS
+&kp SQT               &kp AMPERSAND            &kp LBKT           &kp RBKT             &excl_esp   &kp PERIOD  &kp KP_NUMBER_1              &kp KP_NUMBER_2            &kp KP_NUMBER_3                &kp EQUAL
+                                               &trans             &trans               &trans      &trans      &trans                       &kp KP_NUMBER_0
             >;
         };
 
         nav_layer {
             display-name = "NAV";
             bindings = <
-&kp ESCAPE    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &none   &none   &kp HOME  &kp UP    &kp PAGE_UP    &none
-&sk LEFT_GUI  &sk LCTRL   &sk LEFT_ALT  &sk LEFT_SHIFT  &none   &none   &kp LEFT  &kp DOWN  &kp RIGHT      &none
-&none         &kp C_PREV  &kp C_PP      &kp C_NEXT      &none   &none   &kp END   &none     &kp PAGE_DOWN  &none
-                          &trans        &none           &trans  &trans  &none     &none
+&kp ESCAPE    &kp C_MUTE  &kp C_VOL_DN  &kp C_VOL_UP    &none   &none   &kp HOME   &kp UP    &kp PAGE_UP    &none
+&sk LEFT_GUI  &sk LCTRL   &sk LEFT_ALT  &sk LEFT_SHIFT  &none   &none   &change_2  &kp DOWN  &change_1      &none
+&none         &kp C_PREV  &kp C_PP      &kp C_NEXT      &none   &none   &kp END    &none     &kp PAGE_DOWN  &none
+                          &trans        &none           &trans  &trans  &none      &none
             >;
         };
 

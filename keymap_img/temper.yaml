@@ -13,7 +13,7 @@ layers:
     - ;
   - [Z, X, C, V, B, N, M, ',', ., /]
   - - $$mdi:keyboard-tab$$
-    - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: '$$mdi:backspace-reverse-outline$$'}
+    - {t: '$$mdi:backspace-reverse-outline$$', h: NUM, s: NUM}
     - $$mdi:keyboard-space$$
     - ENTER
     - {t: '$$mdi:backspace-outline$$', h: NAV, s: '$$mdi:backspace-outline$$'}
@@ -29,7 +29,7 @@ layers:
     - '8'
     - '9'
     - +
-  - - ^
+  - - {t: ^, h: LEFT WIN}
     - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
     - {t: (, h: ALT}
     - {t: ), h: '$$mdi:apple-keyboard-shift$$'}
@@ -64,9 +64,9 @@ layers:
     - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:circle-small$$'}
     - ''
     - ''
-    - $$mdi:arrow-left$$
+    - {t: '$$mdi:arrow-left$$', s: '&to2'}
     - $$mdi:arrow-down$$
-    - $$mdi:arrow-right$$
+    - {t: '$$mdi:arrow-right$$', s: '&to1'}
     - ''
   - ['', '$$mdi:skip-backward$$', '$$mdi:play-pause$$', '$$mdi:skip-forward$$', '', '', '$$mdi:format-horizontal-align-right$$', '', '$$mdi:format-vertical-align-bottom$$',
     '']
@@ -194,7 +194,13 @@ combos:
   hidden: true
 - p: [16, 17]
   k: $$mdi:arrow-left-bold-box-outline$$
-  l: [NAV]
+  l: [NAV, DEF, NUM]
 - p: [17, 18]
   k: $$mdi:arrow-right-bold-box-outline$$
-  l: [NAV]
+  l: [DEF, NAV, FUN]
+- p: [11, 12]
+  k: Ctl+ Z
+  l: [DEF, NAV, NUM]
+- p: [12, 13]
+  k: Ctl+ Y
+  l: [DEF, NAV, NUM]
